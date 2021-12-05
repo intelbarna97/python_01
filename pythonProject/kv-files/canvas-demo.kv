@@ -1,0 +1,23 @@
+<MainWindow>:
+    canvas:
+        Color:
+            rgba:1,0,0,1
+        Rectangle:
+            pos:100,100
+            size:50, 70
+        Color:
+            rgba:0,0,1,1
+        Ellipse:
+            pos:100,300
+            size:100,100
+        Color:
+            rgba:1,1,1,1
+        Rectangle:
+            size:400,400
+            pos:300,100
+            source:"img/doge.jpg"
+    Button:
+        text:"Click me!"
+        size_hint:0.2,0.2
+        pos_hint:{"top":1}
+        on_press:print("Touch ME!")

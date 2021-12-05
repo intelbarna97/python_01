@@ -1,0 +1,30 @@
+<Manager>:
+    MenuScreen:
+        name:"Menu"
+    SettingsScreen:
+        name:"Settings"
+
+<MenuScreen>:
+    BoxLayout:
+        Label:
+            text:"This is the menu"
+        Label:
+            id: terminal
+            text:"Write out to terminal!"
+        Button:
+            text:"Go to Settings"
+            on_press: root.manager.current = "Settings"
+<SettingsScreen>:
+    BoxLayout:
+        Label:
+            text:"This is the Settings"
+        Button:
+            text:"Go to Menu"
+            on_press: root.manager.current = "Menu"
+        Button:
+            text:"Write something to terminal."
+            on_press: print(root.manager.get_screen("Menu").ids.terminal.text)
+        Button:
+            text:"I will do this from the python file!"
+            on_press: root.kiir()
+

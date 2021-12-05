@@ -1,0 +1,36 @@
+<MainWindow>:
+    Label:
+        text:"What is your favourite animal?"
+        pos_hint:{"x":0.6,"y":0.6}
+        size_hint:0.1,0.1
+        font_size:25
+    CheckBox:
+        pos_hint:{"x":0.6,"y":0.5}
+        size_hint:0.1,0.1
+        active:True
+        on_press:print("woof") if self.active else print("waf")
+    Label:
+        text:"Dog"
+        pos_hint:{"x":0.7,"y":0.5}
+        size_hint:0.1,0.1
+        font_size:20
+    CheckBox:
+        pos_hint:{"x":0.6,"y":0.4}
+        size_hint:0.1,0.1
+        on_press:
+            if self.active: print("meow")
+            else: print("maow")
+    Label:
+        text:"Cat"
+        pos_hint:{"x":0.7,"y":0.4}
+        size_hint:0.1,0.1
+        font_size:20
+    CheckBox:
+        pos_hint:{"x":0.6,"y":0.3}
+        size_hint:0.1,0.1
+        on_press: if self.active: root.kiir()
+    Label:
+        text:"Giraffe"
+        pos_hint:{"x":0.7,"y":0.3}
+        size_hint:0.1,0.1
+        font_size:20

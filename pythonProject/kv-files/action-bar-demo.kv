@@ -1,0 +1,24 @@
+<MainWindow>:
+    ActionBar:
+        pos_hint:{"top":1}
+        ActionView: #mindig tartalmaznia kell
+            ActionPrevious:
+                title:"Vissza menjéé"
+            ActionCheck:
+                active:True
+            ActionToggleButton:
+                text:"Gomb 01"
+                state:"down"
+                group:"group"
+            ActionSeparator
+            ActionToggleButton:
+                text:"Gomb 02"
+                state:"normal"
+                group:"group"
+            ActionButton:
+                text:"Button1"
+                on_press:print("meg lett nyomva a "+ self.text)
+            ActionSeparator
+            ActionButton:
+                text:"Button2"
+                on_press:print("meg lett nyomva a "+ self.text)
